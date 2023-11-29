@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root{
+    --red:#8a7777;
+  }
+
+  *{
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding: 0; 
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition:all .2s linear;
+  }
+  html{
+    font-size: 625;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+
+  }
+  section{
+    padding:1rem 9%;
+  }
+  
+  .heading{
+    text-align: center;
+    padding: 6rem;
+    position:relative ;
+    color:rgb(13, 13, 13);
+  
+}
+  
+  .heading span{
+    color:var(--red);
+  }
+  header{
+    position: relative;
+    top: 0; left:0; right:0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:#af92f1;
+    padding:1.2rem 11%;
+    box-shadow: 0 .5rem 1rem rgba(24, 9, 9, 0.1);
+    font-size: larger;
+    position: relative;
+    flex: 1rem;
+    
+
+  }
+
+  header .logo i{
+    padding-right: .5rem;
+    color:var(--red);
+  }
+ header img{
+    border-radius: 50%;
+    position: relative;
+  }
+
+  
+
+
+ 
+#pic{
+    display:-ms-inline-grid;
+    flex:.5rem;
+    font-size: larger;
+}
+  
+
+ #main{
+    
+    font-style: italic;
+    
+  gap: 1.5rem;
+    cursor:pointer;
+    border-radius: .3rem;
+  position:relative;
+    display: flex;
+  }
+
+.Home div{
+    height: auto;
+    position: relative;
+}
+
+
+.Home{
+    display: flex;
+    flex-wrap:wrap;
+    min-height: 80vh;
+    align-items: center;
+    background-color:teal;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+  }
+ 
+  .Home .content p{
+    font-size: 3vmax;
+    line-height: 1;
+  }
+  .Home .content h2{
+    font-size: 4vmax;
+    line-height: 1;
+    color: rgb(182, 119, 141);
+  }
+.Home .right img{
+  animation:float 3s linear infinite;
+  overflow: hidden;
+  font: optional;
+  height: 500px;
+    width:500px;
+
+}
+
+.About{
+  background-color: #e8c95c;
+  font-size:large;
+ display:flex;
+font-size: large;
+flex: 0 0 15rem;
+min-height: 80vh;
+
+
+}
+.About h1{
+  font-size: larger;
+  
+}
+.About .About{
+  font-size: large;
+  display:inline;
+align-items: normal;
+
+
+}
+
+.About .About h2{
+  font-style:BOLD;
+font-size: 50px;
+  min-width:80vh;
+  gap: 2px;
+  
+}
+.About .Skills h2{
+  font-style:BOLD;
+font-size: 50px;
+  min-width:80vh;
+  gap: 2px;
+  
+}
+.About .Skills{
+
+  padding: 1.2rem ;
+}
+.About .Skills  tr1{
+  gap: 5.5px;
+  display: flex;
+position: relative;
+flex: 0 0 0rem;
+}
+.About  .Skills  th1{
+  padding: 20px;
+  background:#fffbf3;
+  box-shadow: 0 .5rem 1rem rgba(223, 73, 73, 0.1);
+  border:.1rem solid #050505;
+  border-radius: .5rem;
+  text-align: center;
+ flex: 0 0 15rem;
+ position:relative;
+  opacity:50%;
+  display:flex;
+text-align: center;
+height: .2px;
+min-height: 12vh;
+width: .5vh;
+gap: 5px;
+font-size: medium;
+}
+
+.About .Skills  th2{
+ padding: 20px;
+min-height: 12vh;
+display:flex;
+text-align: center;
+background:#fcf9f4;
+opacity: 50%;
+height: .2px;
+border:.1rem solid #050505;
+border-radius: .5rem;
+position:relative;
+flex: 0 0 15rem;
+}
+
+
+.About  .Skills  th3{
+  padding: 20px;
+min-height: 12vh;
+display:flex;
+text-align: center;
+background:#fcf9f4;
+opacity: 50%;
+height: .2px;
+border:.1rem solid #050505;
+border-radius: .5rem;
+position:relative;
+flex: 0 0 15rem;
+
+}
+h1{
+  background-color: #8a7777;
+ 
+font-size: large;
+text-align: center;
+font-size: 50px;
+text-decoration-line: underline;
+
+}
+.Projects{
+  background-color: #8a7777;
+  font-size:large;
+display: flex;
+font-size: large;
+
+
+}
+
+.Projects .Projects{
+font-size: larger;
+padding: 2px;
+display: inline;
+min-height: 70px;
+}
+.Projects .right img{
+  animation:float 3s linear infinite;
+  overflow: hidden;
+  font: optional;
+  height: 300px;
+    width:300px;
+    transition: .3s  linear;
+}
+.btn{
+  display: inline-block;
+  padding:.8rem 3rem;
+  border:.2rem solid var(--red);
+  color:#fcf9f4;
+  cursor: pointer;
+  font-size: 1.7rem;
+  border-radius: .5rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  margin-top: 1rem;
+  background-color:rgb(192, 111, 31);
+}
+.btn::before{
+  content: '';
+  position: absolute;
+  top:0; right: 0;
+  width:0%;
+  height:100%;
+  background:var(--red);
+  transition: .3s  linear;
+  z-index: -1;
+}
+
+.btn:hover::before{
+  width:100%;
+  left: 0;
+}
+
+.btn:hover{
+  color:#19b5a3;
+}
